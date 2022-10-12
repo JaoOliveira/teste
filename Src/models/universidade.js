@@ -12,7 +12,7 @@ const universidadeSchema = new mongoose.Schema({
         require: true
     },
     web_pages: {
-        type: String,
+        type: Array,
         require: true
     },
     country: {
@@ -22,6 +22,9 @@ const universidadeSchema = new mongoose.Schema({
     name: {
         type: String,
         require: true
+    },
+    domains:{
+        type: Array 
     }
     
 })

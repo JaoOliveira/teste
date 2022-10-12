@@ -3,13 +3,11 @@ const universidadeController = require('../controller/universidadesController.js
 
 const router = express.Router();
 
-router
-
-.get("/universities", universidadeController.getUniversities)
-//.get("/universities/:id", universidadeController.register)
-.post("/universities", universidadeController.register)
-.put("/universities/:id", universidadeController.update)
-.delete("/universities/:id", universidadeController.delete)
-
+router.post("/universities", universidadeController.register);
+router.get("/universities/query", universidadeController.indexCountry);
+router.get("/universities", universidadeController.index);
+router.get("/universities/:id", universidadeController.show);
+router.put("/universities/:id", universidadeController.update);
+router.delete("/universities/:id", universidadeController.destroy);
 
 module.exports = router;
