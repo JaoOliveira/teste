@@ -1,0 +1,16 @@
+{
+  "name": "testeBackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "api": "yarn nodemon Api.js",
+    "dev": "yarn nodemon Server.js"
+  },
+  "dependencies": {
+    "axios": "^1.1.2",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
